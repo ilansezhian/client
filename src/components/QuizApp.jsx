@@ -61,7 +61,7 @@ const questions = [
   },
 ];
 
-function QuizApp() {
+function QuizApp({ darkMode }) {
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -119,7 +119,10 @@ function QuizApp() {
           </button>
         </div>
       ) : (
-        <div className="question-card">
+        <div
+          className={darkMode === true ? "question-dark-card" : "question-card"}
+        >
+          {console.log("darkMode", darkMode)}
           <h4>{questions[current].question}</h4>
           <ul>
             {questions[current].options.map((option, index) => (

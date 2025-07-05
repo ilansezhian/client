@@ -36,6 +36,16 @@
   transition: all 0.3s;
 }
 
+.question-dark-card li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 10px;
+  background: #000;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 .question-card li:hover {
   background: #f3f4f6;
 }

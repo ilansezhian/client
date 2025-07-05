@@ -60,7 +60,7 @@ function App() {
           <Route path="/weather" element={<WeatherApp />} />
           <Route path="/todo" element={<TodoApp />} />
           <Route path="/counter" element={<CounterApp />} />
-          <Route path="/quiz" element={<QuizApp />} />
+          <Route path="/quiz" element={<QuizApp darkMode={darkMode} />} />
         </Routes>
       </div>
     </Router>
